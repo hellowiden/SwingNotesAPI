@@ -1,0 +1,102 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.column,
+.note {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 15px;
+}
+
+.column {
+    text-align: left;
+    max-width: 800px;
+}
+
+.note {
+    max-width: 100%;
+    margin-bottom: 15px;
+}
+
+.note-text,
+.note p.note-text {
+    margin: 10px 0;
+    font-size: 16px;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+}
+
+.note-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.note h3 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.note-info {
+    font-size: 14px;
+    color: #777;
+}
+
+.note .close-icon {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: black;
+}
+
+.note .close-icon:hover {
+    color: #333;
+}
+
+textarea,
+button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    margin-top: 20px;
+}
+
+textarea {
+    border: 1px solid #ddd;
+    height: 80px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+textarea:focus,
+textarea:hover {
+    border-color: #aaa;
+}
+
+button {
+    background-color: #5cb85c;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover,
+button:focus {
+    background-color: #449d44;
+}
+
+@media screen and (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+        gap: 10px;
+        margin: 20px 0;
+    }
+}

@@ -1,0 +1,52 @@
+/* Register.css */
+.register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.register-form {
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #007bff;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
